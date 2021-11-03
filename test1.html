@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>SMK PEMBANGUNAN NASIONAL</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.w3schools.com/html/workplace.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 120px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: red;
+            position: absolute;
+            left: 0;
+            bottom: -10;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover:after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+        }
+        .content h1{
+            font-size: 70px;
+            margin-top: 80px;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+            font-family: 'Architects Daughter';
+        }
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid red;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        span{
+            background: red;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+        button:hover{
+            border: none;
+        }
+    </style>
+    <script>
+        alert("Selamat Datang Di Dashboard");
+    </script>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <ul>
+                    <li><a href="test1.html">Home</a></li>
+                    <li><a href="test2.html">TENTANG HTML</a></li>
+                    <li><a href="https://m.facebook.com">FACEBOOK</a></li>
+                    <li><a href="https://m.youtube.com">YOUTUBE</a></li>
+                </ul>
+             </div>
+            <div class="content">
+                <h1>ALVIAN WEBSITE</h1>
+                <p>Nama: Alvian Dwi Syahputra<br>No Absen: 05<BR>Kelas: X TKJ 2</p>
+                    <div>
+                        <button onclick="myalert()" type="button"><span></span>WHATSAPP</button>
+                        <script>
+                            function myalert(){
+                                alert("Alvian Dwi.S: 08997167090");
+                            }
+                        </script>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
